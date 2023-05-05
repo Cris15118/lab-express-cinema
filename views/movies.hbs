@@ -1,0 +1,9 @@
+<div>
+<a href="/">Volver</a>
+    <h1>peliculas</h1>
+    {{#each this.allMovies}}
+<h3>{{this.title}}</h3>
+<img src="{{this.image}}" width="80px" alt="pelis">
+<a href="/movies/{{this.id}}">ver más</a>
+    {{/each}}
+</div>
