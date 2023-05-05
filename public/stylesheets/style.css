@@ -7,8 +7,30 @@ body {
 a {
   color: #00B7FF;
 }
-#pelis{
-  background-image: url("public/images/cinema.jpg");
+#container-index{
+  background-image: url("/images/cinema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  
+  height: 900px;
+}
+button{
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  
+  
+}
+.title{
+font-size: 50px;
+
+}
+.title2{
+  font-size: 30px;
+}
+.pelis{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 200px;
 }
