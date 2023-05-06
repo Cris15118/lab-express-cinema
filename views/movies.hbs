@@ -1,9 +1,21 @@
 <div>
 <a href="/">Volver</a>
-    <h1>peliculas</h1>
+</div>
+<header id="pagina-movie">
+    <h1>{{title}}</h1>
+    <p>Click on the movie to check the showtimes!</p>
+</header>
+
+    
+
+<div id="container-movies">
+
     {{#each this.allMovies}}
+<div> 
+<img src="{{this.image}}" width="100px" alt="pelis">
+</div>
 <h3>{{this.title}}</h3>
-<img src="{{this.image}}" width="80px" alt="pelis">
 <a href="/movies/{{this.id}}">ver más</a>
     {{/each}}
+    
 </div>

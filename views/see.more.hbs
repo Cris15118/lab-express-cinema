@@ -1,19 +1,19 @@
 <div>
-     <a href="/movies">Volver</a>
+     <a class="volver" href="/movies">Volver</a>
      
-  <h3>pelicual only</h3>
+  
  
-    <div>
+    <div id="container-seemore">
         <img src="{{this.verMas.image}}" width="200px" alt="pelis">
     </div>
-  <div>
+  <div id="container-description">
     <h3>{{this.verMas.title}}</h3>
-    <h3>Director:</h3><h5>{{this.verMas.director}}</h5>
+    <h3>Director:</h3><h4>{{this.verMas.director}}</h4>
     <h3>Stars</h3>
     {{#each this.verMas.stars}}
       <li>{{this}}</li>
     {{/each}}
-    <h5>{{this.verMas.description}}</h5>
+    <h4>{{this.verMas.description}}</h4>
     <h4>{{this.verMas.showtimes}}</h4>
 
   </div>
